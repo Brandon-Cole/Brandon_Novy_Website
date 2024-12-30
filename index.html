@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Brandon Novy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Brandon Novy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Brandon Novy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Brandon Novy</h1>
+        <p class="section__text__p2">Computational Biophysicst</p>
+        <p class="section__text__p3">
+          Currently in the 2nd year of my PhD at UNC Chapel Hill
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/brandon-novy-5a4227263/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Brandon-Cole'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                2nd Year Computational Biology Student <br />
+                • NIH T32 Training Grant Recipient <br />
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.A. Biochemistry <br />
+                PhD Computational Biophysics
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Computational scientist at an academic drug discovery center, specializing in statistical modeling, molecular simulations, and high-throughput virtual screening of ultra-large libraries using physics-based methods and generative AI. Proficient in distributed computing, task automation, and database design to process millions of data points and support compound nominations from catalogs exceeding 70 billion molecules. I collaborate on multiple projects with outside companies, providing iterative problem-solving and regular communication with non-computational teams to deliver data-driven insights for decision-making and academic publications.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NLP</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Distributed Computing</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Analysis</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Airflow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unit Testing</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; max-width: 800px; margin: 0 auto;">
+            <h2 class="experience-sub-title" style="text-align: center;">Professional Skills</h2>
+            <div class="article-container" style="display: flex; flex-direction: column; gap: 1rem; width: 100%; margin-left: -40%;">
+              <!-- Reverse order: -->
+              <article style="display: flex; align-items: flex-start; width: 100%; justify-content: space-between;">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-right: 10px; flex-shrink: 0;"
+                />
+                <div style="flex-grow: 1; display: flex; flex-direction: column; width: 100%;">
+                  <h3 style="margin: 0; text-align: left; word-wrap: break-word; overflow-wrap: break-word;">
+                    Computational Lead, Drug Discovery Center
+                  </h3>
+                  <p style="font-size: 0.9rem; font-weight: normal; color: #666; margin-top: 0.5rem; word-wrap: break-word; overflow-wrap: break-word; width: 100%; text-align: left;">
+                    Lead computational efforts for a drug-discovery center and regularly collaborate with companies to provide data-driven decisions for candidate purchasing (regularly >$10,000)
+                  </p>
+                </div>
+              </article>
+              <article style="display: flex; align-items: flex-start; width: 100%; justify-content: space-between;">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-right: 10px; flex-shrink: 0;"
+                />
+                <div style="flex-grow: 1; display: flex; flex-direction: column; width: 100%;">
+                  <h3 style="margin: 0; text-align: left; word-wrap: break-word; overflow-wrap: break-word;">
+                    Team-Based Dev & Collaboration
+                  </h3>
+                  <p style="font-size: 0.9rem; font-weight: normal; color: #666; margin-top: 0.5rem; word-wrap: break-word; overflow-wrap: break-word; width: 100%; text-align: left;">
+                    Regularly collaborating with other student researchers to make distributable open-source software packages.
+                  </p>
+                </div>
+              </article>
+              <article style="display: flex; align-items: flex-start; width: 100%; justify-content: space-between;">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-right: 10px; flex-shrink: 0;"
+                />
+                <div style="flex-grow: 1; display: flex; flex-direction: column; width: 100%;">
+                  <h3 style="margin: 0; text-align: left; word-wrap: break-word; overflow-wrap: break-word;">
+                    Graduate Teaching Assistant
+                  </h3>
+                  <p style="font-size: 0.9rem; font-weight: normal; color: #666; margin-top: 0.5rem; word-wrap: break-word; overflow-wrap: break-word; width: 100%; text-align: left;">
+                    Responsible for teaching graduate students classes in bioinformatics and intro-programming for pharmacy students.
+                  </p>
+                </div>
+              </article>
+              <article style="display: flex; align-items: flex-start; width: 100%; justify-content: space-between;">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="margin-right: 10px; flex-shrink: 0;"
+                />
+                <div style="flex-grow: 1; display: flex; flex-direction: column; width: 100%;">
+                  <h3 style="margin: 0; text-align: left; word-wrap: break-word; overflow-wrap: break-word;">
+                    R-Markdown Tutor
+                  </h3>
+                  <p style="font-size: 0.9rem; font-weight: normal; color: #666; margin-top: 0.5rem; word-wrap: break-word; overflow-wrap: break-word; width: 100%; text-align: left;">
+                    Taught R programming to students in chemistry, statistics, and economics department during my undergraduate degree.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          
+          
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project One -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/DELi_logo.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Development of Software for Chemical Screening Data</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Popov-Lab-UNC/DELi'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Two -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/article_vector.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NLP-Based Assessment of Misleading News Headlines</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Brandon-Cole/Good_News_Bad_News'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://brandon-cole.github.io/Good_News_Bad_News/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Three -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pub_fig.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Analysis of Genome-Wide Screen to Examine Opioid Addiction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.nature.com/articles/s41589-024-01705-2'"
+              >
+                Publication
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    
+      <style>
+        /* Ensure buttons in all containers align across the section */
+        #projects .btn-container {
+          display: flex;
+          justify-content: center; /* Align buttons horizontally */
+          gap: 1rem; /* Space between the buttons */
+          margin-top: 1rem; /* Space between buttons and the content above */
+        }
+    
+        /* Ensure the details container maintains original size but aligns content */
+        #projects .details-container {
+          padding: 1.5rem;
+          background: white;
+          border-radius: 2rem;
+          border: rgb(53, 53, 53) 0.1rem solid;
+          border-color: rgb(163, 163, 163);
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; /* Ensure space between content and buttons */
+          height: auto; /* Allow natural height based on content */
+        }
+    
+        /* Make the .details-container use flex to allow for equal spacing */
+        #projects .experience-details-container {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem; /* Space between project containers */
+          flex-wrap: wrap;
+        }
+    
+        /* Ensuring the images maintain a consistent size and are centered */
+        #projects .project-img {
+          max-width: 100%; /* Make sure the image doesn't overflow */
+          height: auto; /* Maintain aspect ratio */
+          object-fit: cover; /* Ensure the image covers the container without distortion */
+          margin-bottom: 1rem; /* Space between image and the title */
+          display: block; /* Ensures the image is treated as a block element */
+          margin-left: auto; /* Center the image horizontally */
+          margin-right: auto; /* Center the image horizontally */
+        }
+    
+        /* Align the project titles properly */
+        #projects .project-title {
+          margin: 1rem 0; /* Add margin above and below the title for spacing */
+        }
+    
+        /* Optional: Add some space between section content */
+        #projects {
+          margin-bottom: 2rem;
+        }
+      </style>
+    </section>
+    
+    
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:novy@unc.edu">novy@unc.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/brandon-novy-5a4227263/">My LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Brandon Novy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
